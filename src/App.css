@@ -8,17 +8,17 @@ button{
 
 .dashboard-container {
     display: flex;
-    justify-content: center;
-    gap: 2rem;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 32px;
 }
 .dashboard-items{
-    flex-basis: 260px;
+    flex-basis: 300px;
     flex-grow: 0;
     flex-shrink: 1;
     display: flex;
     text-align: center;
-    border: purple;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .items-sold{
