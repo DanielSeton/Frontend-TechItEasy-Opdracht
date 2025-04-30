@@ -35,22 +35,22 @@ function App() {
           </div>
       </section>
       <section>
+          <h2>Best verkochte TV</h2>
           <div className="best-seller-container">
-              <h2>Best verkochte TV</h2>
-              <article>
+              <article className="best-seller-article">
                   <span className="tv-image">
                         <img src={bestSellingTv.sourceImg} alt="image van beste tv"/>
                   </span>
                   <div className="tv-info">
                       <h3>{createProduct(bestSellingTv)}</h3>
-                      <p>{createPrice(bestSellingTv.price)}</p>
+                      <p className="price-name">{createPrice(bestSellingTv.price)}</p>
                       <p>{createTvInfo(bestSellingTv.availableSizes)}</p>
                       <ul className="option-list">
-                          <li><img src="src/assets/check.png"/>wifi</li>
-                          <li><img src="src/assets/minus.png"/>speech</li>
-                          <li><img src="src/assets/check.png"/>hdr</li>
-                          <li><img src="src/assets/check.png"/>bluetooth</li>
-                          <li><img src="src/assets/minus.png"/>ambilight</li>
+                          <li><img src="src/assets/check.png" className="icon"/>wifi</li>
+                          <li><img src="src/assets/minus.png" className="icon"/>speech</li>
+                          <li><img src="src/assets/check.png" className="icon"/>hdr</li>
+                          <li><img src="src/assets/check.png" className="icon"/>bluetooth</li>
+                          <li><img src="src/assets/minus.png" className="icon"/>ambilight</li>
                       </ul>
                   </div>
               </article>
